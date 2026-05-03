@@ -1,0 +1,15 @@
+{    
+    "VsCodeTaskButtons.showCounter": false,
+    "VsCodeTaskButtons.tasks": [
+    {
+      "label": "📋 Copy diff",
+      "task": "📋 Copy diff for review",
+      "tooltip": "git add . + copy all uncommitted changes to clipboard"
+    },
+    {
+      "label": "📋 Last commit",
+      "task": "📋 Copy last commit diff for review",
+      "tooltip": "Copy last commit diff to clipboard"
+    }
+  ]  
+}

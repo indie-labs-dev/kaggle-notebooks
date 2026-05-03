@@ -1,0 +1,62 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "📋 Copy diff for review",
+      "type": "shell",
+      "command": "git add .; git diff --cached --unified=3 --no-color | Set-Clipboard",
+      "windows": {
+        "command": "git add .; git diff --cached --unified=3 --no-color | Set-Clipboard"
+      },
+      "linux": {
+        "command": "git add . && git diff --cached --unified=3 --no-color | xclip -selection clipboard"
+      },
+      "osx": {
+        "command": "git add . && git diff --cached --unified=3 --no-color | pbcopy"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "📋 Copy staged diff for review",
+      "type": "shell",
+      "command": "git diff --cached --unified=3 --no-color | Set-Clipboard",
+      "windows": {
+        "command": "git diff --cached --unified=3 --no-color | Set-Clipboard"
+      },
+      "linux": {
+        "command": "git diff --cached --unified=3 --no-color | xclip -selection clipboard"
+      },
+      "osx": {
+        "command": "git diff --cached --unified=3 --no-color | pbcopy"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "📋 Copy last commit diff for review",
+      "type": "shell",
+      "command": "git diff HEAD~1 HEAD --unified=3 --no-color | Set-Clipboard",
+      "windows": {
+        "command": "git diff HEAD~1 HEAD --unified=3 --no-color | Set-Clipboard"
+      },
+      "linux": {
+        "command": "git diff HEAD~1 HEAD --unified=3 --no-color | xclip -selection clipboard"
+      },
+      "osx": {
+        "command": "git diff HEAD~1 HEAD --unified=3 --no-color | pbcopy"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      }
+    }
+  ]
+}
